@@ -1,16 +1,16 @@
 const buttonElement = document.getElementById('btn');
 
 // on crée une fonction qui récupére les valeurs des inputs et qui appelle la fonction multiply pour afficher le résultat
-buttonElement.onclick = function (){
+buttonElement.onclick = function() {
     // on récupére les valeurs des imputs et on les converti en entier
-    let number1 = parseInt(document.getElementById('number1').value);
-    let number2 = parseInt(document.getElementById('number2').value);
+    let number1 = document.getElementById('number1').value;
+    let number2 = document.getElementById('number2').value;
 
     // on appelle la fonction multiply et on stocke le résultat dans une variable
     let result = multiply(number1, number2);
 
     // on affiche le résultat
-    document.getElementById('result').innerHTML ='Le résultat de la multiplication est: ' + result;
+    document.getElementById('result').innerHTML = 'Le résultat de la multiplication est: ' + result;
 
 }
 
