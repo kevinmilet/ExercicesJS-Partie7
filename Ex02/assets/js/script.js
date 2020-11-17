@@ -1,4 +1,4 @@
-let divChange = document.querySelector('div');
+let divChange = document.querySelector('#paraChap01');
 
 // ajout des listeners pour les boutons
 let bold = document.getElementById('tBold');
@@ -17,7 +17,7 @@ function textBold() {
     } else {
         divChange.style.fontWeight = 'bold';
     };
-}
+};
 
 // fonction bouton color
 function textColor() {
@@ -26,8 +26,8 @@ function textColor() {
     } else {
         divChange.style.color = randomColor();
     };
-    
-}
+
+};
 
 // fonction bouton agrandi
 function textEnlarge() {
@@ -36,20 +36,20 @@ function textEnlarge() {
     } else {
         divChange.style.fontSize = 'large';
     };
-}
+};
 
 // fonction qui annule les changements
 function cancelStyle() {
     divChange.style.color = 'black';
     divChange.style.fontSize = 'initial';
     divChange.style.fontWeight = 'normal';
-}
+};
 
 // fonction qui choisi une couleur aléatoirement
 function randomColor() {
     let color = Math.floor(Math.random() * Math.pow(256, 3)).toString(16);
-    while(color.length < 6) {
+    while (color.length < 6) {
         color = '0' + color;
-    }
+    };
     return '#' + color;
-}
+};
