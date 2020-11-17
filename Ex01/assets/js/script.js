@@ -10,7 +10,7 @@ buttonElement.onclick = function() {
     let result = multiply(number1, number2);
 
     // on affiche le résultat
-    document.getElementById('result').innerHTML = 'Le résultat de la multiplication est: ' + result;
+    document.getElementById('result').innerHTML = `Le résultat de la multiplication est: ${result}`;
 
 }
 
