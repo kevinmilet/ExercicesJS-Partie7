@@ -1,5 +1,5 @@
 // on récupére la balise img dans une contanste pour l'utiliser dans la fonction et dans l'event listener
-const pict = document.querySelector('img');
+const pict = document.querySelector('#picture');
 
 // fonction fléchée qui scale l'image au click
 let scaleImg = () => {
